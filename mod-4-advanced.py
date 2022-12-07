@@ -172,6 +172,9 @@ def tic_tac_toe(board):
     '''
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
+    if all(not row for row in board):
+        return "NO WINNER"
+    
     for row in board:
         if all(x == row[0] for x in row):
             return row[0]
@@ -241,4 +244,3 @@ def eta(first_stop, second_stop, route_map):
 from_place = str(input("From: "))
 to_place = str(input("To: "))
 print(eta(from_place, to_place, legs), "mins")
-
