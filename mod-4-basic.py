@@ -140,4 +140,4 @@ def body_mass_index(weight, height):
     return body_mass_index
 
 jheabmi = body_mass_index(132, [4, 11])
-print(jheaanswer)
+print(jheabmi)
